@@ -66,14 +66,35 @@ p {
 }
 
 .about-intro {
-  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
   text-align: center;
 }
 
+.about-intro h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-intro h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #ccc;
+  margin: 10px auto 0;
+}
+
+
+
+.about-intro p {
+  color: #555;
+}
+
 .about-block {
- margin-top: 20px;
- margin-bottom: 40px;
- text-align: center;
+  max-width: 700px;
+  margin: 20px auto 40px auto;
+  text-align: center;
 }
 
 .about-block img {
