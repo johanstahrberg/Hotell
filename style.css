@@ -87,3 +87,12 @@ img {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
