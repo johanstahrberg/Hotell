@@ -65,7 +65,10 @@ p {
   color: #0077cc;
 }
 
-
+.about-intro {
+  margin-bottom: 40px;
+  text-align: center;
+}
 
 .about-block {
  margin-top: 20px;
