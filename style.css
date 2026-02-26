@@ -16,7 +16,19 @@
 }
 
 
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
 
 
 
@@ -52,12 +64,7 @@
   color: #0077cc;
 }
 
-.about {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
- 
-}
+
 
 .about-block {
  margin-top: 20px;
@@ -67,7 +74,16 @@
 .about-block img {
   width: 100%;
   max-width: 700px;
-  border-radius: 10px;
   margin-bottom: 3px;
   margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
