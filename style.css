@@ -1,20 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.site-header {
-  display: flex;
-  
-  align-items: center;
-  padding: 15px 30px;
-  background: rgb(233, 179, 179);
-  border-bottom: 2px solid black;
- 
-}
-
+/* Layout */
 body {
   min-height: 100vh;
   display: flex;
@@ -28,24 +18,24 @@ main {
   flex: 1;
 }
 
-h1 {
-  margin-bottom: 10px;
+section {
+  margin-bottom: 60px;
 }
 
-p {
-  margin-bottom: 20px;
-  line-height: 1.6;
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgb(233, 179, 179);
+  border-bottom: 2px solid black;
 }
-
-
-
 
 .logo {
   display: flex;
   align-items: center;
   gap: 1px;
   text-decoration: none;
- 
   color: rgb(168, 38, 60);
   font-size: 25px;
   font-weight: bold;
@@ -55,8 +45,9 @@ p {
   height: 40px;
 }
 
+/* Navigation */
 .nav-menu {
-    margin-left: 40px;
+  margin-left: 40px;
   list-style: none;
   display: flex;
   gap: 20px;
@@ -73,48 +64,17 @@ p {
   color: #0077cc;
 }
 
-.about-intro {
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-  text-align: center;
+/* Typography */
+h1 {
+  margin-bottom: 10px;
 }
 
-.about-intro h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.about-intro h1::after {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 2px;
-  background: #ccc;
-  margin: 10px auto 0;
-}
-
-
-
-.about-intro p {
-  color: #555;
-}
-
-.about-block {
-  max-width: 700px;
-  margin: 20px auto 40px auto;
-  text-align: center;
-}
-
-.about-block img {
-  width: 100%;
-  max-width: 700px;
-  margin-top: 20px;
-  margin-bottom: 3px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* Shared images */
 img {
   max-width: 100%;
   height: auto;
@@ -122,18 +82,49 @@ img {
 
 .img-card {
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-footer {
+/* Intro sections */
+.intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
   text-align: center;
-  font-size: 14px;
-  color: #666;
-  margin-top: 40px;
-  padding: 20px 0;
-  border-top: 1px solid #ddd;
 }
 
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.intro h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #ccc;
+  margin: 10px auto 0;
+}
+
+.intro p {
+  color: #555;
+}
+
+/* About page */
+.about-block {
+  max-width: 700px;
+  margin: 20px auto 40px;
+  text-align: center;
+}
+
+.about-block img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 3px;
+}
+
+/* Hero */
 .hero {
   text-align: center;
   margin-bottom: 40px;
@@ -144,14 +135,19 @@ footer {
   max-height: 450px;
   object-fit: cover;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 5px;
 }
 
+.hero p {
+  margin-bottom: 1px;
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -166,6 +162,11 @@ footer {
   background: #005fa3;
 }
 
+.room-card .btn {
+  margin-top: 0;
+}
+
+/* Home page */
 .rooms-preview {
   text-align: center;
 }
@@ -183,4 +184,91 @@ footer {
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature {
+  max-width: 200px;
+}
+
+/* Home page */
+.rooms-preview {
+  text-align: center;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.rooms-grid img,
+.room-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature {
+  max-width: 200px;
+}
+
+/* Hotel facts */
+.hotel-facts {
+  text-align: center;
+}
+
+.hotel-facts ul {
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Rooms page */
+.rooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  text-align: center;
+}
+
+.room-card {
+  max-width: 700px;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.room-info {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
 }
