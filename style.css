@@ -133,6 +133,19 @@ img {
   margin: 20px auto 3px;
 }
 
+/* Hotel facts */
+.hotel-facts {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  }
+
+.hotel-facts ul {
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
+ }
+
+
 /* Hero */
 .hero {
   position: relative;
@@ -229,16 +242,7 @@ img {
   max-width: 200px;
 }
 
-/* Hotel facts */
-.hotel-facts {
-  text-align: center;
-}
 
-.hotel-facts ul {
-  list-style-position: inside;
-  display: inline-block;
-  text-align: left;
-}
 
 /* Rooms page */
 .rooms {
